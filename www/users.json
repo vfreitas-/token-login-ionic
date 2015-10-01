@@ -1,0 +1,15 @@
+{
+	"users" : 
+	[
+		{
+			"nome"  : "vitor",
+			"email" : "vitor@quicktech.no",
+			"passwd": "quicktech"
+		},
+		{
+			"nome"  : "joao",
+			"email" : "joao@quicktech.no",
+			"passwd": "1234"
+		}
+	]
+}

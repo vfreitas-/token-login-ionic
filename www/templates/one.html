@@ -1,0 +1,33 @@
+<ion-view> 
+
+	<ion-nav-title>
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <ion-autocomplete ng-model="model"
+                        items-method="items(query)"
+                        placeholder="Enter test query ..."
+                        items-clicked-method="itemsClicked(callback)"/>
+      </label>
+  	</ion-nav-title>
+
+ 
+    <div class="tabs tabs-top tab-bar">
+    <a class="ion-document-text"></a>
+      <a class="tab-item active" href="#">
+        <i class="icon ion-home"></i>
+        Test
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-star"></i>
+        Favorites
+      </a>
+      <a class="ion-funnel"></a>
+    </div>
+
+
+	<ion-content class="padding">
+
+
+    	<div id="map" data-tap-disabled="true"></div>
+ 	</ion-content>
+</ion-view>

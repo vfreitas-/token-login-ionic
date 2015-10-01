@@ -1,0 +1,93 @@
+<ion-view view-title="New Account" name="new-view">
+
+	
+	<ion-header-bar class="bar bar-subheader">
+    	<button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="previousSlide()">Previous</button>
+
+		<button class="button icon-right ion-chevron-right button-clear button-dark" ng-click="nextSlide()">Next</button>
+  	</ion-header-bar>
+
+	<ion-content class="padding">
+
+	<ion-scroll zooming="false" direction="y">
+		<ion-slide-box on-slide-changed="slideHasChanged($index)" style="height: 100%;">
+		    
+		    <ion-slide style="height: 100%;">
+    			<form>
+					<div class="list list-inset">
+						<label class="item item-input item-floating-label">
+							<input type="email"  placeholder="E-mail" ng-model="newUser.email" required/>
+						</label>
+						<label class="item item-input item-floating-label">
+							<input type="text"  placeholder="Password" ng-model="newUser.password" />
+						</label>
+						<label class="item item-input item-floating-label">
+							<input type="text"  placeholder="Confirm Password" ng-model="newUser.confirmPassword" />
+						</label>
+
+						<div class="item row">
+							<button class="col button button-clear button-assertive" ng-click="clearTheForm()">
+								Clear
+							</button>
+							<button class="col button button-block button-positive" ng-click="saveNewUser()">
+								Next
+							</button>	
+						</div>
+
+					</div>
+				</form>
+		    </ion-slide>
+
+		    <ion-slide>
+		   		<form>
+					<div class="list list-inset">
+						<label class="item item-input item-floating-label">
+							<input type="email"  placeholder="E-mail" ng-model="newUser.email" required/>
+						</label>
+						<label class="item item-input item-floating-label">
+							<input type="text"  placeholder="Password" ng-model="newUser.password" />
+						</label>
+						<label class="item item-input item-floating-label">
+							<input type="text"  placeholder="Confirm Password" ng-model="newUser.confirmPassword" />
+						</label>
+
+						<div class="item row">
+							<button class="col button button-clear button-assertive" ng-click="clearTheForm()">
+								Clear
+							</button>
+							<button class="col button button-block button-positive" ng-click="saveNewUser()">
+								Next
+							</button>	
+						</div>
+
+					</div>
+				</form>
+		    </ion-slide>
+
+		    <ion-slide>
+		        <ion-scroll zooming="false" direction="y">
+		            <div class="list">
+                        <div class="item item-divider">
+        					Aceite os Termos antes de prosseguir.
+        				</div>
+        		  		<div class="item item-text-wrap">
+        		  			<p class="item item-body">
+        		  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus imperdiet lorem, facilisis gravida enim vulputate eu. Suspendisse non ligula eget turpis venenatis sagittis. Phasellus at sem at lectus vestibulum placerat at sed massa. Donec pulvinar varius mauris eu semper. In consectetur elementum tristique. In euismod cursus purus et gravida. Donec sodales eget elit vel facilisis. Nam auctor nulla ut lacus maximus auctor.
+        
+        						Mauris sed turpis at diam fringilla euismod quis eget eros. Phasellus tempor a ligula non placerat. Integer dictum dolor a urna pellentesque tristique. Nunc suscipit tincidunt viverra. Maecenas diam erat, luctus in consequat vitae, egestas et sem. Donec enim dui, aliquam at bibendum ac, semper quis sem. Curabitur at dui elementum, malesuada magna vel, pretium dui. Etiam in feugiat ipsum. Etiam sed eros nec metus mollis aliquet. Donec iaculis sapien in diam cursus, ac semper eros posuere.	
+        		  			</p>
+        		  		</div>
+        		  		<div class="item item-divider row padding">
+        		  			<button class="col button-small button-stable">Disagree</button>
+        		  			<div></div>
+        		  			<button class="col button-small button-stable">I Agree</button>
+        		  		</div>
+    		        </div>
+		        </ion-scroll>
+		    </ion-slide>
+		</ion-slide-box>
+		</ion-scroll>
+
+	
+	</ion-content>
+</ion-view>
